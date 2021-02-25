@@ -1,0 +1,49 @@
+.navbard{
+    margin-bottom: 78px;
+    .header{
+        border-bottom: 1px solid $secondary-color;
+        .navbar-brand{
+            color: $primary-color;
+            cursor: pointer;
+        }
+        .nav-ul{
+            list-style-type: none;
+            li{
+                margin-left: 30px;
+                &:first-child a{
+                    border-bottom: 1px solid $primary-color;
+                    padding-bottom: 40px;
+                }
+                a{
+                    color: $third-color;
+                    text-decoration: none;
+                }
+            }
+        }
+        .right-menu-data{
+            .profile-image{
+                border-radius: 50%;
+                @include sameSize(35);
+                background-color: $secondary-color;
+                margin-left: 56px;
+            }
+            .line{
+                display: block;
+                height: 101px;
+                background-color: $secondary-color;
+                width: 2px;
+                margin-left: 18px;
+            }
+            .cart{
+                background-color: $primary-color;
+                border-radius: 35px;
+                width: 99.72px;
+                height: 38.71px;
+                color: white;
+                padding: 16px;
+                margin-left: 25px;
+                font-size: emSize(13);
+            }
+        }
+    }
+}

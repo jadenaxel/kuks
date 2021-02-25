@@ -1,0 +1,18 @@
+.best_people{
+    font-size: emSize(35);
+    position: relative;
+    margin-bottom: 73px;
+    &::before{
+        content: open-quote;
+    }
+    &::after{
+        content: close-quote;
+    }
+    span{
+        position: relative;
+        display: inline-block;
+        font-size: remSize(23);
+        color: $primary-color;
+        top: 21px;
+    }
+}

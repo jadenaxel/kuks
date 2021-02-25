@@ -1,0 +1,32 @@
+$primary-color: #EF4C00;
+$secondary-color: #D5DAE0;
+$third-color: #2E4765;
+$font-size: 16px;
+
+@function emSize($size){
+    @return #{0.0625 * $size}em;
+}
+
+@function remSize($size){
+    @return #{0.0625 * $size}rem;
+}
+
+@mixin sameSize($size){
+    width: #{$size}px;
+    height: #{$size}px;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, i, ul{
+    padding: 0;
+    margin: 0;
+}
+
+@import "nav";
+@import "people";
+@import "meal";

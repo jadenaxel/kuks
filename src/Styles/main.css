@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, i, ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navbard {
+  margin-bottom: 78px;
+}
+.navbard .header {
+  border-bottom: 1px solid #D5DAE0;
+}
+.navbard .header .navbar-brand {
+  color: #EF4C00;
+  cursor: pointer;
+}
+.navbard .header .nav-ul {
+  list-style-type: none;
+}
+.navbard .header .nav-ul li {
+  margin-left: 30px;
+}
+.navbard .header .nav-ul li:first-child a {
+  border-bottom: 1px solid #EF4C00;
+  padding-bottom: 40px;
+}
+.navbard .header .nav-ul li a {
+  color: #2E4765;
+  text-decoration: none;
+}
+.navbard .header .right-menu-data .profile-image {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #D5DAE0;
+  margin-left: 56px;
+}
+.navbard .header .right-menu-data .line {
+  display: block;
+  height: 101px;
+  background-color: #D5DAE0;
+  width: 2px;
+  margin-left: 18px;
+}
+.navbard .header .right-menu-data .cart {
+  background-color: #EF4C00;
+  border-radius: 35px;
+  width: 99.72px;
+  height: 38.71px;
+  color: white;
+  padding: 16px;
+  margin-left: 25px;
+  font-size: 0.8125em;
+}
+
+.best_people {
+  font-size: 2.1875em;
+  position: relative;
+  margin-bottom: 73px;
+}
+.best_people::before {
+  content: open-quote;
+}
+.best_people::after {
+  content: close-quote;
+}
+.best_people span {
+  position: relative;
+  display: inline-block;
+  font-size: 1.4375rem;
+  color: #EF4C00;
+  top: 21px;
+}
+
+.bg-meal {
+  background: url("../assets/10882.png") no-repeat center/100%;
+  height: 369px;
+  border-radius: 20px;
+  padding: 74px 66px;
+}
+.bg-meal .bg-meal-title {
+  color: white;
+  font-size: 2.6875em;
+  line-height: 1.4;
+  margin-bottom: 51px;
+}
+.bg-meal .app-stores {
+  color: white;
+}
+.bg-meal .app-stores .app-store, .bg-meal .app-stores .play-store {
+  padding: 5px 15px;
+  cursor: pointer;
+  width: 150px;
+  height: 51px;
+  border-radius: 5px;
+}
+.bg-meal .app-stores .app-store p, .bg-meal .app-stores .play-store p {
+  font-size: 0.625em;
+}
+.bg-meal .app-stores .app-store {
+  background-color: #B30733;
+  margin-right: 17px;
+}
+.bg-meal .app-stores .app-store i {
+  font-size: 2.5em;
+}
+.bg-meal .app-stores .play-store {
+  background-color: #FF0043;
+}
+.bg-meal .app-stores .play-store i {
+  font-size: 2.0625em;
+}
+
+.sideBarMeal {
+  width: 253px;
+  height: 325px;
+}
+
+/*# sourceMappingURL=main.css.map */
