@@ -1,0 +1,147 @@
+.ourmeal-container {
+    .left-side {
+        .our-meal-sugguest {
+            margin-bottom: 42px;
+            .our-meal-sugguest-title {
+                color: #b30733;
+                font-size: emSize(23);
+                font-weight: bold;
+            }
+            .our-meal-search-setting {
+                input {
+                    border-radius: 26px;
+                    border: 0;
+                    background-color: #f4f9ff;
+                    width: 370px;
+                    height: 50px;
+                    padding: 27px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .ourl-meal-search-setting-filter {
+                    border-radius: 50%;
+                    background-color: $primary-color;
+                    @include sameSize(49.36);
+                    color: white;
+                    font-size: emSize(25);
+                    cursor: pointer;
+                    margin-left: 9.8px;
+                }
+            }
+        }
+        .typesuggest{
+            cursor: pointer;
+            margin-bottom: 37px;
+            .suggest-border:first-child{
+                background-color: $primary-color;
+                color: white;
+            }
+            .suggest-border{
+                color: black;
+                background-color: #F4F9FF;
+                border-radius: 28px;
+                min-width: 8%;
+                width: auto;
+                padding: 5px 10px;
+                height: 34px;
+                margin-right: 10px;
+                i{
+                    margin-right: 5px;
+                }
+                p{
+                    font-size: emSize(15);
+                    margin-right: 5px;
+                }
+                &:hover{
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+    .right-side {
+        width: 253px;
+        height: 417.04px;
+        border-radius: 15px;
+        box-shadow: 0 0 18px #f6f7f8;
+        padding: 20px;
+        background-image: url("../assets/Food.png");
+        background-position: center 314px;
+        background-repeat: no-repeat;
+        background-size: 135%;
+        h2 {
+            font-size: emSize(15);
+            margin-bottom: 55px;
+        }
+        .line {
+            background-color: $primary-color;
+            height: 1.94px;
+            width: 214.71px;
+            margin-bottom: 31px;
+            .ball-1 {
+                background-color: $primary-color;
+                @include sameSize(10);
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0 0 2px 6px rgba(250, 235, 247, 0.4);
+                border: 1px solid rgb(250, 235, 247);
+                margin-left: 32px;
+            }
+            .ball-2 {
+                background-color: $primary-color;
+                @include sameSize(10);
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0 0 2px 6px rgba(250, 235, 247, 0.4);
+                border: 1px solid rgb(250, 235, 247);
+                margin-left: 83px;
+            }
+            .ball-1,
+            .ball-2 {
+                overflow: hidden;
+                &:hover {
+                    overflow: visible;
+                }
+                .value-ball {
+                    transition: 1.5s ease-in-out;
+                    color: white;
+                    padding: 5px;
+                    font-size: emSize(9);
+                    background-color: $primary-color;
+                    width: 25.16px;
+                    height: 30.87px;
+                    clip-path: polygon(51% 100%, 100% 42%, 85% 0, 15% 0, 0 43%);
+                    margin-top: -32px;
+                    margin-left: -9px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .mycusine {
+            font-size: emSize(15);
+            margin-bottom: 19px;
+        }
+        .countries {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            p {
+                width: 72px;
+                height: 24px;
+                font-size: emSize(11);
+                &:hover {
+                    background: $primary-color;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 13px;
+                }
+            }
+        }
+        .select-bottom {
+            background-color: #9f072f;
+            color: white;
+            align-self: center;
+            margin-top: 54px;
+        }
+    }
+}

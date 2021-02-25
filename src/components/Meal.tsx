@@ -1,3 +1,5 @@
+import SvgMotor from "./SvgMotor";
+
 export default function Meal() {
     return (
         <div className="meal-container d-flex">
@@ -16,7 +18,19 @@ export default function Meal() {
                     </div>
                 </div>
             </div>
-            <div className="sideBarMeal"></div>
+            <div className="sideBarMeal d-flex flex-column align-items-center justify-content-between container">
+                <p className="sideBarMealTitle">
+                    Your Meal Has Been Shipped
+                </p>
+                <div className="img">
+                    <SvgMotor />
+                </div>
+                <div className="time">
+                    15<sup>m</sup>
+                    :
+                    20<sup>s</sup>
+                </div>
+            </div>
         </div>
     )
 }

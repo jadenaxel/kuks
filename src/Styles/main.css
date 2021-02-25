@@ -77,48 +77,216 @@ p, i, ul {
   top: 21px;
 }
 
-.bg-meal {
+.meal-container {
+  margin-bottom: 28px;
+}
+.meal-container .bg-meal {
   background: url("../assets/10882.png") no-repeat center/100%;
   height: 369px;
   border-radius: 20px;
   padding: 74px 66px;
 }
-.bg-meal .bg-meal-title {
+.meal-container .bg-meal .bg-meal-title {
   color: white;
   font-size: 2.6875em;
   line-height: 1.4;
   margin-bottom: 51px;
 }
-.bg-meal .app-stores {
+.meal-container .bg-meal .app-stores {
   color: white;
 }
-.bg-meal .app-stores .app-store, .bg-meal .app-stores .play-store {
+.meal-container .bg-meal .app-stores .app-store,
+.meal-container .bg-meal .app-stores .play-store {
   padding: 5px 15px;
   cursor: pointer;
   width: 150px;
   height: 51px;
   border-radius: 5px;
 }
-.bg-meal .app-stores .app-store p, .bg-meal .app-stores .play-store p {
+.meal-container .bg-meal .app-stores .app-store p,
+.meal-container .bg-meal .app-stores .play-store p {
   font-size: 0.625em;
 }
-.bg-meal .app-stores .app-store {
-  background-color: #B30733;
+.meal-container .bg-meal .app-stores .app-store {
+  background-color: #b30733;
   margin-right: 17px;
 }
-.bg-meal .app-stores .app-store i {
+.meal-container .bg-meal .app-stores .app-store i {
   font-size: 2.5em;
 }
-.bg-meal .app-stores .play-store {
-  background-color: #FF0043;
+.meal-container .bg-meal .app-stores .play-store {
+  background-color: #ff0043;
 }
-.bg-meal .app-stores .play-store i {
+.meal-container .bg-meal .app-stores .play-store i {
   font-size: 2.0625em;
 }
-
-.sideBarMeal {
+.meal-container .sideBarMeal {
   width: 253px;
   height: 325px;
+  padding: 10px 15px;
+  align-self: flex-end;
+  box-shadow: 0 3px 20px 2px #f6f7f8;
+  border-radius: 19px;
+}
+.meal-container .sideBarMeal .sideBarMealTitle {
+  text-align: center;
+  font-size: 1.25em;
+}
+.meal-container .sideBarMeal .time {
+  color: #EF4C00;
+  font-size: 3.125em;
+}
+
+.ourmeal-container .left-side .our-meal-sugguest {
+  margin-bottom: 42px;
+}
+.ourmeal-container .left-side .our-meal-sugguest .our-meal-sugguest-title {
+  color: #b30733;
+  font-size: 1.4375em;
+  font-weight: bold;
+}
+.ourmeal-container .left-side .our-meal-sugguest .our-meal-search-setting input {
+  border-radius: 26px;
+  border: 0;
+  background-color: #f4f9ff;
+  width: 370px;
+  height: 50px;
+  padding: 27px;
+}
+.ourmeal-container .left-side .our-meal-sugguest .our-meal-search-setting input:focus {
+  outline: none;
+}
+.ourmeal-container .left-side .our-meal-sugguest .our-meal-search-setting .ourl-meal-search-setting-filter {
+  border-radius: 50%;
+  background-color: #EF4C00;
+  width: 49.36px;
+  height: 49.36px;
+  color: white;
+  font-size: 1.5625em;
+  cursor: pointer;
+  margin-left: 9.8px;
+}
+.ourmeal-container .left-side .typesuggest {
+  cursor: pointer;
+  margin-bottom: 37px;
+}
+.ourmeal-container .left-side .typesuggest .suggest-border:first-child {
+  background-color: #EF4C00;
+  color: white;
+}
+.ourmeal-container .left-side .typesuggest .suggest-border {
+  color: black;
+  background-color: #F4F9FF;
+  border-radius: 28px;
+  min-width: 8%;
+  width: auto;
+  padding: 5px 10px;
+  height: 34px;
+  margin-right: 10px;
+}
+.ourmeal-container .left-side .typesuggest .suggest-border i {
+  margin-right: 5px;
+}
+.ourmeal-container .left-side .typesuggest .suggest-border p {
+  font-size: 0.9375em;
+  margin-right: 5px;
+}
+.ourmeal-container .left-side .typesuggest .suggest-border:hover {
+  background-color: #EF4C00;
+  color: white;
+}
+.ourmeal-container .right-side {
+  width: 253px;
+  height: 417.04px;
+  border-radius: 15px;
+  box-shadow: 0 0 18px #f6f7f8;
+  padding: 20px;
+  background-image: url("../assets/Food.png");
+  background-position: center 314px;
+  background-repeat: no-repeat;
+  background-size: 135%;
+}
+.ourmeal-container .right-side h2 {
+  font-size: 0.9375em;
+  margin-bottom: 55px;
+}
+.ourmeal-container .right-side .line {
+  background-color: #EF4C00;
+  height: 1.94px;
+  width: 214.71px;
+  margin-bottom: 31px;
+}
+.ourmeal-container .right-side .line .ball-1 {
+  background-color: #EF4C00;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px 6px rgba(250, 235, 247, 0.4);
+  border: 1px solid #faebf7;
+  margin-left: 32px;
+}
+.ourmeal-container .right-side .line .ball-2 {
+  background-color: #EF4C00;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px 6px rgba(250, 235, 247, 0.4);
+  border: 1px solid #faebf7;
+  margin-left: 83px;
+}
+.ourmeal-container .right-side .line .ball-1,
+.ourmeal-container .right-side .line .ball-2 {
+  overflow: hidden;
+}
+.ourmeal-container .right-side .line .ball-1:hover,
+.ourmeal-container .right-side .line .ball-2:hover {
+  overflow: visible;
+}
+.ourmeal-container .right-side .line .ball-1 .value-ball,
+.ourmeal-container .right-side .line .ball-2 .value-ball {
+  transition: 1.5s ease-in-out;
+  color: white;
+  padding: 5px;
+  font-size: 0.5625em;
+  background-color: #EF4C00;
+  width: 25.16px;
+  height: 30.87px;
+  clip-path: polygon(51% 100%, 100% 42%, 85% 0, 15% 0, 0 43%);
+  margin-top: -32px;
+  margin-left: -9px;
+  border-radius: 50%;
+}
+.ourmeal-container .right-side .mycusine {
+  font-size: 0.9375em;
+  margin-bottom: 19px;
+}
+.ourmeal-container .right-side .countries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ourmeal-container .right-side .countries p {
+  width: 72px;
+  height: 24px;
+  font-size: 0.6875em;
+}
+.ourmeal-container .right-side .countries p:hover {
+  background: #EF4C00;
+  color: white;
+  cursor: pointer;
+  border-radius: 13px;
+}
+.ourmeal-container .right-side .select-bottom {
+  background-color: #9f072f;
+  color: white;
+  align-self: center;
+  margin-top: 54px;
+}
+
+.food-card {
+  width: 327px;
+  height: 109px;
 }
 
 /*# sourceMappingURL=main.css.map */

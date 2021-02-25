@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import NavBar from "./components/NavBar";
 import Meal from "./components/Meal";
+import OurMeal from "./components/OurMeal";
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
                 <p className="best_people text-center">People who loves to eat are always Best People <span>Julia Child</span></p>
             </div>
             <Meal />
+            <OurMeal />
         </Fragment>
     )
 }
