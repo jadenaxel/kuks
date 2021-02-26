@@ -35,14 +35,29 @@ export default function OurMeal() {
         }
     ];
 
-    const food = [{
-        image: "../assets/Image33.png",
-        name: "Pakistani Chicken Platter",
-        stars: 4,
-        reviews: 34,
-        tag: ["Indian", "Pakistani"],
-        time: "20-30"
-    }];
+    const food = [
+        {
+            image: "/assets/Image33.png",
+            name: "Pakistani Chicken Platter",
+            reviews: 34,
+            tag: ["Indian", "Pakistani"],
+            time: "20-30"
+        },
+        {
+            image: "/assets/Image34.png",
+            name: "Risotto",
+            reviews: 20,
+            tag: ["Italian", "Eurpeon"],
+            time: "10-20"
+        },
+        {
+            image: "/assets/Image35.png",
+            name: "Maslenitca",
+            reviews: 35,
+            tag: ["Russian"],
+            time: "25-35"
+        }
+    ];
 
     return (
         <div className="ourmeal-container d-flex">
@@ -63,9 +78,11 @@ export default function OurMeal() {
                         )
                     })}
                 </div>
-                {food.map((f: any, i: any) => {
-                    return <Food key={i} image={f.image} name={f.name} stars={f.stars} reviews={f.reviews} tags={f.tag} time={f.time} />
-                })}
+                <div className="d-flex">
+                    {food.map((f: any, i: any) => {
+                        return <Food key={i} image={f.image} name={f.name} stars={f.stars} reviews={f.reviews} tags={f.tag} time={f.time} />
+                    })}
+                </div>
             </div>
             <div className="right-side">
                 <h2>Price / Serving</h2>

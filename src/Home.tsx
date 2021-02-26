@@ -12,6 +12,10 @@ export default function Home() {
             </div>
             <Meal />
             <OurMeal />
+            <div className="popular container-fluid d-flex">
+                <h3>Popular</h3>
+                <div className="line"></div>
+            </div>
         </Fragment>
     )
 }

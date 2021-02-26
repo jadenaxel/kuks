@@ -1,6 +1,17 @@
-.food-card {
-  width: 327px;
-  height: 109px;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 5 |     border: 1px solid $secondary-color;
+ *   |                       ^^^^^^^^^^^^^^^^
+ *   '
+ *   Scss\food.scss 5:23  root stylesheet */
 
-/*# sourceMappingURL=food.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      border: 1px solid $secondary-color;\d\a   \2502                        ^^^^^^^^^^^^^^^^\a   \2575 \a   Scss\\food.scss 5:23  root stylesheet";
+}

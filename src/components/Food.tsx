@@ -1,25 +1,30 @@
-import { url } from "inspector";
 import { memo } from "react";
+import { start } from "repl";
 
-function Food({ image, name, stars, reviews, tags, time } : { image: string, name: string, stars: number, reviews: number, tags: [], time: string }) {
+function Food({ image, name, reviews, tags, time }: { image: string, name: string, reviews: number, tags: [], time: string }) {
+    let numberOfStar = [0, 1, 2, 3, 4];
+
     return (
         <div className="food-card">
-            {/* <div className="background-food" style={{ backgroundImage: url(`${image}`) }}> */}
-
-            {/* </div> */}
+            <div className="background-food" style={{ backgroundImage: `url(${image})` }}>
+            </div>
             <div className="description-card">
-                <div className="nameAndHeart">
+                <div className="nameAndHeart d-flex align-items-center justify-content-between">
                     <h3>{name}</h3>
-                    <p>heart</p>
+                    <i className="fas fa-heart"></i>
                 </div>
-                <div className="starsAndReview">
-                    <div className="stars">{stars}</div>
+                <div className="starsAndReview d-flex">
+                    <div className="stars">
+                        {numberOfStar.map((e: any, i: any) =>
+                            <i className="far fa-star"></i>
+                        )}
+                    </div>
                     <div className="review">{reviews} Reviews</div>
                 </div>
-                <div className="tagsAndTime">
-                    <div className="tags">
-                        {tags.map((tag: any, i:any) => {
-                            return <p key={i}>{tag}</p>
+                <div className="tagsAndTime d-flex align-items-center justify-content-between">
+                    <div className="tags d-flex">
+                        {tags.map((tag: any, i: any) => {
+                            return <p className="d-flex align-items-center justify-content-center" key={i}>{tag}</p>
                         })}
                     </div>
                     <div className="time">

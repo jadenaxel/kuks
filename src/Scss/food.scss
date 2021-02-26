@@ -1,4 +1,45 @@
 .food-card{
     width: 327px;
-    height: 109px;
+    height: 262px;
+    border-radius: 20px;
+    border: 1px solid $secondary-color;
+    overflow: hidden;
+    margin-right: 20px;
+    .background-food{
+        width: 327px;
+        height: 154px;
+    }
+    .description-card{
+        padding: 10px 20px;
+        .nameAndHeart{
+            h3{
+                color: #B30733;
+                font-size: emSize(17);
+            }
+            i{
+                color: #FF0043;
+            }
+        }
+        .starsAndReview{
+            margin-bottom: 14px;
+            .stars{
+                margin-right: 10px;
+                i{
+                    color: #EF4C00;
+                }
+            }
+        }
+        .tagsAndTime{
+            .tags{
+                p{
+                    min-width: 56.8px;
+                    height: 24.19px;
+                    font-size: emSize(11);
+                    background-color: #F6F7F8;
+                    margin-right: 9px;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
 }

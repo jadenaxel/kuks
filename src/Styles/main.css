@@ -137,6 +137,9 @@ p, i, ul {
   font-size: 3.125em;
 }
 
+.ourmeal-container {
+  margin-bottom: 30px;
+}
 .ourmeal-container .left-side .our-meal-sugguest {
   margin-bottom: 42px;
 }
@@ -286,7 +289,42 @@ p, i, ul {
 
 .food-card {
   width: 327px;
-  height: 109px;
+  height: 262px;
+  border-radius: 20px;
+  border: 1px solid #D5DAE0;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.food-card .background-food {
+  width: 327px;
+  height: 154px;
+}
+.food-card .description-card {
+  padding: 10px 20px;
+}
+.food-card .description-card .nameAndHeart h3 {
+  color: #B30733;
+  font-size: 1.0625em;
+}
+.food-card .description-card .nameAndHeart i {
+  color: #FF0043;
+}
+.food-card .description-card .starsAndReview {
+  margin-bottom: 14px;
+}
+.food-card .description-card .starsAndReview .stars {
+  margin-right: 10px;
+}
+.food-card .description-card .starsAndReview .stars i {
+  color: #EF4C00;
+}
+.food-card .description-card .tagsAndTime .tags p {
+  min-width: 56.8px;
+  height: 24.19px;
+  font-size: 0.6875em;
+  background-color: #F6F7F8;
+  margin-right: 9px;
+  border-radius: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
