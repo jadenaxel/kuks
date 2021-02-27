@@ -1,5 +1,4 @@
 import { memo } from "react";
-import { start } from "repl";
 
 function Food({ image, name, reviews, tags, time }: { image: string, name: string, reviews: number, tags: [], time: string }) {
     let numberOfStar = [0, 1, 2, 3, 4];

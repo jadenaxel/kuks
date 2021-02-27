@@ -80,7 +80,7 @@ export default function OurMeal() {
                 </div>
                 <div className="d-flex">
                     {food.map((f: any, i: any) => {
-                        return <Food key={i} image={f.image} name={f.name} stars={f.stars} reviews={f.reviews} tags={f.tag} time={f.time} />
+                        return <Food key={i} image={f.image} name={f.name} reviews={f.reviews} tags={f.tag} time={f.time} />
                     })}
                 </div>
             </div>
